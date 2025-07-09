@@ -6,8 +6,8 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 import chainlit as cl
 
-welcome_message = "Hello! I am your research assistant. Feel free to ask me any questions on Agent AI: Surveying the Horizons of Multimodal Interaction."
-namespace = "ai-agent-survey"
+welcome_message = "Hello! I am your APRA Information Chatbot. Feel free to ask me any questions about APRA prudential standards, operational risk management, and regulatory guidance."
+namespace = "apra-information"
 embeddings = OpenAIEmbeddings()
 index_name = "jr-lab"
 # template = """You are a research assistant. Your task is to read the relevant content from academic paper or journal articles, then convert it to plain languages

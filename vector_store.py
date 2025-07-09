@@ -80,7 +80,7 @@ def process_pdfs(pdf_storage_path: str):
                     "metadata": {"source": doc.page_content},
                 }
             ],
-            namespace="ai-agent-survey",
+            namespace="apra-information",
         )
         print("Vector stored in Pinecone index successfully.")
     return doc_search

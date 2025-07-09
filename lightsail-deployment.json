@@ -1,0 +1,27 @@
+{
+  "serviceName": "knowledgebase-chatbot",
+  "containers": {
+    "chatbot": {
+      "image": "knowledgebase-chatbot:latest",
+      "ports": {
+        "8000": "HTTP"
+      },
+      "environment": {
+        "OPENAI_API_KEY": "",
+        "PINECONE_API_KEY": ""
+      }
+    }
+  },
+  "publicEndpoint": {
+    "containerName": "chatbot",
+    "containerPort": 8000,
+    "healthCheck": {
+      "healthyThreshold": 2,
+      "unhealthyThreshold": 2,
+      "timeoutSeconds": 2,
+      "intervalSeconds": 5,
+      "path": "/",
+      "successCodes": "200-499"
+    }
+  }
+}
