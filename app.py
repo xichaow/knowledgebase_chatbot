@@ -1,3 +1,9 @@
+import os
+from dotenv import load_dotenv
+
+# Load environment variables first
+load_dotenv()
+
 from langchain.memory import ChatMessageHistory, ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from langchain_pinecone import PineconeVectorStore
@@ -8,8 +14,10 @@ import chainlit as cl
 
 welcome_message = "Hello! I am your APRA Information Chatbot. Feel free to ask me any questions about APRA prudential standards, operational risk management, and regulatory guidance."
 namespace = "apra-information"
-embeddings = OpenAIEmbeddings()
 index_name = "jr-lab"
+
+# Initialize embeddings after environment variables are loaded
+embeddings = OpenAIEmbeddings()
 # template = """You are a research assistant. Your task is to read the relevant content from academic paper or journal articles, then convert it to plain languages
 #             such that the general public can understand.\n\n"""
 
