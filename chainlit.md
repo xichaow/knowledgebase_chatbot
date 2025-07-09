@@ -1,14 +1,27 @@
-# Welcome to Chainlit! 🚀🤖
+# APRA Information Chatbot 🏛️
 
-Hi there, Developer! 👋 We're excited to have you on board. Chainlit is a powerful tool designed to help you prototype, debug and share applications built on top of LLMs.
+Welcome to the APRA Information Chatbot! This AI assistant helps you find information about Australian Prudential Regulation Authority (APRA) standards and guidelines.
 
-## Useful Links 🔗
+## What You Can Ask About 📚
 
-- **Documentation:** Get started with our comprehensive [Chainlit Documentation](https://docs.chainlit.io) 📚
-- **Discord Community:** Join our friendly [Chainlit Discord](https://discord.gg/k73SQ3FyUh) to ask questions, share your projects, and connect with other developers! 💬
+- **APRA Connect Guide** - System usage and navigation
+- **CPS 230** - Operational Risk Management standards
+- **CPG 230** - Operational Risk Management practice guide
+- **Prudential Standards** - General regulatory requirements
 
-We can't wait to see what you create with Chainlit! Happy coding! 💻😊
+## Example Questions 💬
 
-## Welcome screen
+- "What is CPS 230?"
+- "How do I access APRA Connect?"
+- "What are the operational risk management requirements?"
+- "How do I create returns in APRA Connect?"
 
-To modify the welcome screen, edit the `chainlit.md` file at the root of your project. If you do not want a welcome screen, just leave this file empty.
+## About This Service ℹ️
+
+This chatbot uses publicly available APRA documents and is powered by AI. It's designed to help the Australian financial services community quickly find relevant regulatory information.
+
+**Disclaimer**: This is not official APRA guidance. Always refer to the official APRA website for authoritative information.
+
+---
+
+Start chatting below to get answers to your APRA-related questions! 🚀
