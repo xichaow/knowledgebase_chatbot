@@ -58,7 +58,8 @@ async def main(message: cl.Message):
 
     cb = cl.AsyncLangchainCallbackHandler()
 
-    res = await chain.acall(message.content, callbacks=[cb])
+    # Use "question" key instead of direct message content for ConversationalRetrievalChain
+    res = await chain.acall({"question": message.content}, callbacks=[cb])
     answer = res["answer"]
     source_documents = res["source_documents"]  # type: List[Document]
 
