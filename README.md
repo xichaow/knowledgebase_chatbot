@@ -19,6 +19,8 @@ This chatbot uses **publicly available APRA documentation** to answer questions 
 - 🔍 **Source Citations** - Shows exact document sources for each answer
 - 💬 **Memory-Enabled Chat** - Maintains conversation context
 - 🏛️ **APRA-Specific Knowledge** - Focused on Australian prudential regulation
+- 📊 **Quality Evaluation** - Integrated RAGAS and LLM-as-Judge evaluation metrics
+- 📈 **Observability** - Langfuse integration for conversation monitoring and analytics
 
 ## 🚀 Live Demo
 
@@ -63,6 +65,8 @@ This chatbot uses **publicly available APRA documentation** to answer questions 
    ```
    OPENAI_API_KEY=your_openai_api_key_here
    PINECONE_API_KEY=your_pinecone_api_key_here
+   LANGFUSE_PUBLIC_KEY=your_langfuse_public_key_here
+   LANGFUSE_SECRET_KEY=your_langfuse_secret_key_here
    ```
 
 4. **Process PDFs and build vector store:**
@@ -90,6 +94,8 @@ This app is configured for easy deployment on Railway:
 4. **Add environment variables** in Railway dashboard:
    - `OPENAI_API_KEY`
    - `PINECONE_API_KEY`
+   - `LANGFUSE_PUBLIC_KEY` (optional, for evaluation)
+   - `LANGFUSE_SECRET_KEY` (optional, for evaluation)
 5. **Deploy automatically** - Railway will build and deploy using the Dockerfile
 
 **Cost**: ~$5/month on Railway

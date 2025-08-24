@@ -68,6 +68,10 @@ logs/
 .chainlit/
 chainlit.db
 
+# Claude Code files
+.claude/
+.files
+
 # Vector store data (may contain processed confidential content)
 vector_store/
 embeddings/
@@ -78,8 +82,16 @@ tmp/
 temp/
 *.tmp
 
+# Testing and debug files (keep clean for production)
+test_*.py
+debug_*.py
+check_*.py
+fix_*.py
+*_test.py
+
 # OS generated files
 Thumbs.db
 .DS_Store?
 ehthumbs.db
 Icon?
+

@@ -1,10 +1,24 @@
+# Core dependencies
 chainlit
 langchain
 langchain-community
-langchain_openai
+langchain-core
+langchain-openai
+langchain-pinecone
 openai 
 tiktoken
-pymupdf 
-pinecone-client 
-langchain-pinecone
 python-dotenv
+
+# Pinecone dependencies
+pinecone
+
+# Document processing
+pymupdf 
+
+# Evaluation and observability
+langfuse
+ragas
+datasets
+
+# Additional dependencies
+pydantic
